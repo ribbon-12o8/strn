@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>卒論</title>
+
+  <style>
+
+    body {
+      margin: 20px;
+      background: linear-gradient(135deg, #fdeeff, #e0f7ff);
+      font-family: "Helvetica Neue", sans-serif;
+      color: #59240c;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #ffffff, #f9f9ff);
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto 20px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .card:nth-of-type(1) { animation-delay: 0.2s; }
+    .card:nth-of-type(2) { animation-delay: 0.4s; }
+    .card:nth-of-type(3) { animation-delay: 0.6s; }
+    .card:nth-of-type(4) { animation-delay: 0.8s; }
+    .card:nth-of-type(5) { animation-delay: 1s; } 
+
+    ul {
+      list-style-type: none;
+      background: linear-gradient(135deg, #bbefff, #c6d3ff);
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    li::before {
+      content: "💙 ";
+    }
+
+    li {
+      transition: 0.3s;
+      margin: 8px 0;
+    }
+
+    li:hover {
+      transform: scale(1.1);
+      color: #ff4da6;
+    }
+    
+    li:hover::before {
+      content: "💖 ";
+    }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeIn 1s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+       opacity: 1;
+       transform: translateY(0);
+      }
+    }
+
+    h1 {
+      text-align: center;
+      color: #cb0066;
+    }
+
+    h2 {
+      color: #787fff;
+      border-bottom: 2px dashed #1c4c95;
+      padding-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <body ontouchstart="">
+  <h1>2-2</h1>
+
+  <div class="card fade-in">
+    <h2>2-2</h2>
+    <p>2-2の内容</p>
+  </div>
+
+  <div class="card fade-in">
+    <a href="2-1.html">前へ</a>
+    <a href="2-3.html">次へ</a>
+  </div>
+
+</body>
+</html>
